@@ -1,57 +1,63 @@
-There are two types of loops in Python: for loops and while loops.
-
-The for loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The while loop is used for executing a block of code repeatedly as long as a certain condition is true. In the while loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.
-
-For Loops in Python
-An example how to use the for for a looping through a list in Python:
-
-cars = ["bwm", "audi", "reno"]
+<article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto">There are two types of loops in Python: <code>for</code> loops and <code>while</code> loops.</p>
+<p dir="auto">The <code>for</code> loop is used for iterating over a sequence (that is either a list, a tuple, a set, a dictionary, a string or any other iterable object) and executing a block of code for each element in the sequence. The <code>while</code> loop is used for executing a block of code repeatedly as long as a certain condition is <code>true</code>. In the <code>while</code> loop, the condition is checked at the beginning of each iteration, and the loop is exited when the condition becomes false. It is important to make sure that the condition eventually becomes false, otherwise, the loop will continue running indefinitely, which is called an infinite loop.</p>
+<h2 dir="auto"><a id="user-content-for-loops-in-python" class="anchor" aria-hidden="true" href="#for-loops-in-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><code>For</code> Loops in Python</h2>
+<p dir="auto">An example how to use the <code>for</code> for a looping through a list in Python:</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="cars = [&quot;bwm&quot;, &quot;audi&quot;, &quot;reno&quot;]
 for car in cars:
-    print(car)
-In this example, we have a list of cars, and we want to print each car on a new line. We use the for loop to iterate over each element in the list, and for each element, we print it to the console using the print function.
-
-Inline For Loop
-In this example, we have a list of numbers, and we want to create a new list that contains the square of each number. Instead of using a traditional for loop, we use a list comprehension, which is a more concise way of achieving the same result.
-
-numbers = [1, 2, 3, 4, 5]
+    print(car)"><pre><span class="pl-s1">cars</span> <span class="pl-c1">=</span> [<span class="pl-s">"bwm"</span>, <span class="pl-s">"audi"</span>, <span class="pl-s">"reno"</span>]
+<span class="pl-k">for</span> <span class="pl-s1">car</span> <span class="pl-c1">in</span> <span class="pl-s1">cars</span>:
+    <span class="pl-en">print</span>(<span class="pl-s1">car</span>)</pre></div>
+<p dir="auto">In this example, we have a list of cars, and we want to print each car on a new line. We use the <code>for</code> loop to iterate over each element in the list, and for each element, we print it to the console using the <code>print</code> function.</p>
+<h3 dir="auto"><a id="user-content-inline-for-loop" class="anchor" aria-hidden="true" href="#inline-for-loop"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Inline <code>For</code> Loop</h3>
+<p dir="auto">In this example, we have a list of numbers, and we want to create a new list that contains the square of each number. Instead of using a traditional <code>for</code> loop, we use a list comprehension, which is a more concise way of achieving the same result.</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="numbers = [1, 2, 3, 4, 5]
 squares = [x**2 for x in numbers]
-print(squares)
-In this case, the expression is x**2, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: [1, 4, 9, 16, 25].
-
-For Loop with Index
-In this example, the loop iterates over the cars list and prints the index and value of each element:
-
-cars = ["bwm", "audi", "reno"]
+print(squares)"><pre><span class="pl-s1">numbers</span> <span class="pl-c1">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>]
+<span class="pl-s1">squares</span> <span class="pl-c1">=</span> [<span class="pl-s1">x</span><span class="pl-c1">**</span><span class="pl-c1">2</span> <span class="pl-k">for</span> <span class="pl-s1">x</span> <span class="pl-c1">in</span> <span class="pl-s1">numbers</span>]
+<span class="pl-en">print</span>(<span class="pl-s1">squares</span>)</pre></div>
+<p dir="auto">In this case, the expression is <code>x**2</code>, which is the square of the current number in the iteration, and the iterable is the numbers list. The result of the list comprehension is a new list that contains the square of each number: <code>[1, 4, 9, 16, 25]</code>.</p>
+<h3 dir="auto"><a id="user-content-for-loop-with-index" class="anchor" aria-hidden="true" href="#for-loop-with-index"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><code>For</code> Loop with Index</h3>
+<p dir="auto">In this example, the <code>loop</code> iterates over the <code>cars</code> list and prints the index and value of each element:</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="cars = [&quot;bwm&quot;, &quot;audi&quot;, &quot;reno&quot;]
 for i in range(len(cars)):
-    print(i, car[i])
-While Loops in Python
-Here is an example of the while loop that counts from 1 to 10:
-
-count = 1
-while count <= 10:
+    print(i, car[i])"><pre><span class="pl-s1">cars</span> <span class="pl-c1">=</span> [<span class="pl-s">"bwm"</span>, <span class="pl-s">"audi"</span>, <span class="pl-s">"reno"</span>]
+<span class="pl-k">for</span> <span class="pl-s1">i</span> <span class="pl-c1">in</span> <span class="pl-en">range</span>(<span class="pl-en">len</span>(<span class="pl-s1">cars</span>)):
+    <span class="pl-en">print</span>(<span class="pl-s1">i</span>, <span class="pl-s1">car</span>[<span class="pl-s1">i</span>])</pre></div>
+<h2 dir="auto"><a id="user-content-while-loops-in-python" class="anchor" aria-hidden="true" href="#while-loops-in-python"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><code>While</code> Loops in Python</h2>
+<p dir="auto">Here is an example of the <code>while</code> loop that counts from <code>1</code> to <code>10</code>:</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="count = 1
+while count &lt;= 10:
     print(count)
-    count += 1
-In this example, the loop starts with count equal to 1. The condition count <= 10 is true, so the code within the loop is executed. This code prints the value of count (which is currently 1) and then increments count by 1 using the += operator. The loop then checks the condition again, which is still true because count is now 2. This process repeats until count reaches 11, at which point the condition becomes false and the loop terminates.
-
-Note: Python does not have a built-in do-while loop like some other programming languages. However, you can achieve similar functionality using a combination of a while loop and an initial check.
-
-Break and Continue Statements
-In Python, break and continue are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.
-
-See next example to learn how to break (and exit) a for loop in Python:
-
-numbers = [1, 2, 3, 4, 5]
+    count += 1"><pre><span class="pl-s1">count</span> <span class="pl-c1">=</span> <span class="pl-c1">1</span>
+<span class="pl-k">while</span> <span class="pl-s1">count</span> <span class="pl-c1">&lt;=</span> <span class="pl-c1">10</span>:
+    <span class="pl-en">print</span>(<span class="pl-s1">count</span>)
+    <span class="pl-s1">count</span> <span class="pl-c1">+=</span> <span class="pl-c1">1</span></pre></div>
+<p dir="auto">In this example, the loop starts with count equal to <code>1</code>. The condition count <code>&lt;= 10</code> is <code>true</code>, so the code within the loop is executed. This code prints the value of count (which is currently <code>1</code>) and then increments count by <code>1</code> using the <code>+=</code> operator. The loop then checks the condition again, which is still <code>true</code> because count is now <code>2</code>. This process repeats until count reaches <code>11</code>, at which point the condition becomes <code>false</code> and the loop terminates.</p>
+<blockquote>
+<p dir="auto">Note: Python does not have a built-in <code>do-while</code> loop like some other programming languages. However, you can achieve similar functionality using a combination of a <code>while</code> loop and an initial check.</p>
+</blockquote>
+<h2 dir="auto"><a id="user-content-break-and-continue-statements" class="anchor" aria-hidden="true" href="#break-and-continue-statements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><code>Break</code> and <code>Continue</code> Statements</h2>
+<p dir="auto">In Python, <code>break</code> and <code>continue</code> are reserved keywords used to modify the behavior of loops. They allow you to control when a loop should terminate or skip over certain iterations based on a condition.</p>
+<p dir="auto">See next example to learn how to break (and exit) a <code>for</code> loop in Python:</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 3:
         break
-    print(num)
-In this example, the loop iterates over the numbers list and prints each number. However, when the value of num is equal to 3, the break statement is executed, causing the loop to terminate prematurely. The output would be: 1 2.
-
-The continue, on the other hand, is used to skip over certain iterations of a loop based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the for loop in Python:
-
-numbers = [1, 2, 3, 4, 5]
+    print(num)"><pre><span class="pl-s1">numbers</span> <span class="pl-c1">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>]
+<span class="pl-k">for</span> <span class="pl-s1">num</span> <span class="pl-c1">in</span> <span class="pl-s1">numbers</span>:
+    <span class="pl-k">if</span> <span class="pl-s1">num</span> <span class="pl-c1">==</span> <span class="pl-c1">3</span>:
+        <span class="pl-k">break</span>
+    <span class="pl-en">print</span>(<span class="pl-s1">num</span>)</pre></div>
+<p dir="auto">In this example, the loop iterates over the <code>numbers</code> list and prints each number. However, when the value of <code>num</code> is equal to <code>3</code>, the <code>break</code> statement is executed, causing the loop to terminate prematurely. The output would be: <code>1 2</code>.</p>
+<p dir="auto">The <code>continue</code>, on the other hand, is used to skip over certain iterations of a loop based on a condition. When encountered, it causes the current iteration of the loop to end and proceeds with the next iteration. Here's an example of how to skip an iteration in the <code>for</code> loop in Python:</p>
+<div class="highlight highlight-source-python notranslate position-relative overflow-auto" dir="auto" data-snippet-clipboard-copy-content="numbers = [1, 2, 3, 4, 5]
 for num in numbers:
     if num == 3:
         continue
-    print(num)
-In this example, the loop iterates over the numbers list and prints each number. However, when the value of num is equal to 3, the continue statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: 1 2 4 5.
+    print(num)"><pre><span class="pl-s1">numbers</span> <span class="pl-c1">=</span> [<span class="pl-c1">1</span>, <span class="pl-c1">2</span>, <span class="pl-c1">3</span>, <span class="pl-c1">4</span>, <span class="pl-c1">5</span>]
+<span class="pl-k">for</span> <span class="pl-s1">num</span> <span class="pl-c1">in</span> <span class="pl-s1">numbers</span>:
+    <span class="pl-k">if</span> <span class="pl-s1">num</span> <span class="pl-c1">==</span> <span class="pl-c1">3</span>:
+        <span class="pl-k">continue</span>
+    <span class="pl-en">print</span>(<span class="pl-s1">num</span>)</pre></div>
+<p dir="auto">In this example, the loop iterates over the <code>numbers</code> list and prints each number. However, when the value of <code>num</code> is equal to <code>3</code>, the <code>continue</code> statement is executed, causing the current iteration of the loop to end and proceeding with the next iteration. The output would be: <code>1 2 4 5</code>.</p>
+</article>
